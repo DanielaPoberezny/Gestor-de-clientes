@@ -1,0 +1,29 @@
+<div class="home-wrapper">
+  <p-card class="home-card">
+    <h1 class="title">Gestor de Clientes</h1>
+    <p class="subtitle">Elegí una opción para comenzar</p>
+    <div class="button-group">
+      <button
+        pButton
+        label="Crear Cliente"
+        icon="pi pi-user-plus"
+        class="p-button-rounded p-button-outlined p-button-warning"
+        [routerLink]="['/crear-cliente']"
+      ></button>
+      <button
+        pButton
+        label="Listar Clientes"
+        icon="pi pi-list"
+        class="p-button-rounded p-button-outlined p-button-warning"
+        [routerLink]="['/lista-clientes']"
+      ></button>
+      <button
+        pButton
+        label="Estadísticas"
+        icon="pi pi-chart-bar"
+        class="p-button-rounded p-button-outlined p-button-warning"
+        [routerLink]="['/kpi-clientes']"
+      ></button>
+    </div>
+  </p-card>
+</div>

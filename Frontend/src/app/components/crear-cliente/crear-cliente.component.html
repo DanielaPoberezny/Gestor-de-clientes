@@ -1,0 +1,72 @@
+<div class="crear-cliente-wrapper">
+  <p-toast></p-toast>
+
+  <p-card class="crear-cliente-card">
+    <h2 class="title">Crear Cliente</h2>
+
+    <div class="p-fluid form-grid">
+      <div class="p-field">
+        <label for="nombre">Nombre</label>
+        <input
+          id="nombre"
+          type="text"
+          pInputText
+          [(ngModel)]="cliente.nombre"
+          name="nombre"
+        />
+      </div>
+
+      <div class="p-field">
+        <label for="apellido">Apellido</label>
+        <input
+          id="apellido"
+          type="text"
+          pInputText
+          [(ngModel)]="cliente.apellido"
+          name="apellido"
+        />
+      </div>
+
+      <div class="p-field">
+        <label for="edad">Edad</label>
+        <p-inputNumber
+          [(ngModel)]="cliente.edad"
+          name="edad"
+          inputId="edad"
+          [min]="0"
+        ></p-inputNumber>
+      </div>
+
+      <div class="p-field">
+        <label for="fechaNacimiento">Fecha de Nacimiento</label>
+        <p-calendar
+          id="fechaNacimiento"
+          [(ngModel)]="cliente.fechaNacimiento"
+          name="fechaNacimiento"
+          dateFormat="yy-mm-dd"
+          [showIcon]="true"
+        ></p-calendar>
+      </div>
+
+      <div class="p-field">
+        <button
+          pButton
+          type="button"
+          label="Crear Cliente"
+          (click)="crearCliente()"
+          class="p-button-rounded p-button-warning w-full"
+        ></button>
+        
+      </div>
+    </div>
+    <div class="boton-volver-centrado">
+      <button
+        pButton
+        type="button"
+        label="Volver a Inicio"
+        class="p-button-rounded p-button-outlined p-button-warning"
+        (click)="volverInicio()"
+      ></button>
+    </div>
+  </p-card>
+

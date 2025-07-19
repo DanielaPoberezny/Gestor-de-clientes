@@ -1,0 +1,41 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+  background-color: #fffaf4;
+  font-family: "Segoe UI", sans-serif;
+  padding-top: 3rem;
+}
+
+.crear-cliente-wrapper {
+  width: 100%;
+  max-width: 600px;
+  padding: 1rem;
+}
+
+.crear-cliente-card {
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.title {
+  color: #a65c2a;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.p-field {
+  margin-bottom: 1.5rem;
+}
+
+.boton-volver-centrado {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+

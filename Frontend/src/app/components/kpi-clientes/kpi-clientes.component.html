@@ -1,0 +1,18 @@
+<div class="estadisticas-wrapper">
+  <p-card class="estadisticas-card">
+    <h2 class="title">Estadísticas sobre clientes ingresados</h2>
+    <div class="estadisticas-content">
+      <p><strong>Promedio de edad:</strong> {{ promedioEdad }}</p>
+      <p><strong>Desviación estándar:</strong> {{ desviacionEstandar }}</p>
+    </div>
+    <div class="boton-centrado">
+      <button
+        pButton
+        type="button"
+        label="Volver a Inicio"
+        class="p-button-rounded p-button-outlined p-button-warning"
+        (click)="volverInicio()"
+      ></button>
+    </div>    
+  </p-card>
+</div>
