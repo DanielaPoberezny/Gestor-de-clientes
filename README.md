@@ -16,7 +16,6 @@ Aplicación fullstack desarrollada para la gestión de clientes. Incluye un back
 
 ### 1. Clonar el repositorio
 
-```bash
 git clone https://github.com/DanielaPoberezny/Gestor-de-clientes.git
 cd Gestor-de-clientes
 2. Configurar la base de datos
@@ -24,26 +23,19 @@ Asegurate de tener MySQL instalado y funcionando.
 
 Crear la base de datos importando el archivo backup.sql:
 
-bash
-Copiar
-Editar
 mysql -u tu_usuario -p < backend/backup.sql
 Cambiá tu_usuario por tu usuario real de MySQL. Te pedirá la contraseña.
 
 Esto va a crear la base clientesdb y cargar algunos datos de ejemplo.
 
 3. Ejecutar el backend
-bash
-Copiar
-Editar
+
 cd backend
 npm install
 npm start
 
 Archivo .env (crear en la carpeta backend)
-env
-Copiar
-Editar
+
 DB_HOST=localhost
 DB_USER=tu_usuario
 DB_PASSWORD=1234
@@ -51,18 +43,14 @@ DB_NAME=clientesdb
 Asegurate de cambiar los valores según tu configuración local.
 
 4. Ejecutar el frontend
-bash
-Copiar
-Editar
+
 cd frontend
 npm install
 ng serve
 Esto levanta la app en http://localhost:4200/
 
 Estructura del proyecto
-csharp
-Copiar
-Editar
+
 Gestor-de-clientes/
 │
 ├── backend/
@@ -80,12 +68,12 @@ Gestor-de-clientes/
 Funcionalidades
 
 
- Listado de clientes
+-Listado de clientes
 
- Alta de clientes
+-Alta de clientes
 
- Visualización de KPIs
+-Visualización de KPIs
 
- Validaciones básicas
+-Validaciones básicas
 
- Separación clara entre frontend y backend
+-Separación clara entre frontend y backend
